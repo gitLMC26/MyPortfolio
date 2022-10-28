@@ -163,7 +163,7 @@ body{
     color: whitesmoke;
     font-size: 25px;
     -webkit-text-stroke: .1px black;
-    text-shadow: .5px .5px rgb(26, 25, 25);
+    text-shadow: 1px 1px rgb(26, 25, 25);
     text-align: justify;
     text-justify: inter-word;  
     text-indent: 50px; 
@@ -243,7 +243,7 @@ body{
 
 .div_hp{
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 18px 0;
 }
 
 .header_proj{
@@ -255,13 +255,18 @@ body{
     text-shadow: 4px 4px rgb(26, 25, 25);
 }
 
-.label_proj1{
+.link_proj1{
     font-family: 'New Super Mario Font U', sans-serif;
     color: rgb(226, 226, 37);
     -webkit-text-stroke: 1.5px black; 
     text-shadow: 2px 3px rgb(26, 25, 25);
     font-size: 40px;
     text-align: center;
+    text-decoration: none;
+}
+
+.link_proj1:hover{
+    color: rgb(226, 226, 37);
 }
 
 .label_proj{
@@ -331,28 +336,33 @@ body{
     background-position: center;     
 }
 
+.div_contact_form{
+    border: 2px solid rgb(30, 30, 30);
+    box-shadow: 3px 3px 3px 3px rgb(34, 33, 33);
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}
+
 .label_forms{
-    font-family: 'New Super Mario Font U', sans-serif;
+    font-family: 'Pridi', serif;
+    font-weight: bolder;
     color: rgb(213, 23, 23);
-    -webkit-text-stroke: 1.5px black; 
-    text-shadow: .5px 1px rgb(255, 255, 255);
+    -webkit-text-stroke: .1px black;
+    text-shadow: .5px 1px rgb(68, 68, 68);
     font-size: 20px;
     text-align: center;
 }
 
-.form_div{
-    box-shadow: 0 5px 5px 3px rgb(62, 62, 62);
-    border-radius: 10px;
-}
-
 .btn{
-    font-family: 'New Super Mario Font U', sans-serif !important;
+    font-family: 'Pridi', serif;
     background-color: rgb(226, 226, 37);
     color:  rgb(213, 23, 23);
-    -webkit-text-stroke: 1.5px black; 
-    text-shadow: .5px 1px aliceblue;
+    -webkit-text-stroke: .5 px black; 
+    text-shadow: .5px 1px rgb(31, 31, 31) !important;
     font-size: 20px;
     box-shadow: 0 2px 2px 0 rgb(80, 80, 80);
+    border-radius: 10px;
 }
 
 .btn:hover{
@@ -362,14 +372,12 @@ body{
 }
 
 .em_phone_add{
-    font-family: 'Arvo', serif;
+    font-family: 'Pridi', serif;
 }
 
 /* --------------------------------------------------Media Query-------------------------------------------*/
 
 @media screen and (max-width: 540px) {
-
-
     .intro_par_pic  {
         width: auto;
         margin: auto;
@@ -379,6 +387,9 @@ body{
 
     .par_1 p{
         font-size: 27px;
+        -webkit-text-stroke: 1px black;
+        text-shadow: 3px 3px rgb(26, 25, 25);   
+       
     }
 
     .my_name{
@@ -451,20 +462,21 @@ body{
         height: 200px;
         width: 120px;
         padding: 5px;
+        margin-bottom: 5px;
     }
 
-    .label_proj1{
+    .proj1 .link_proj1{
         font-family: 'New Super Mario Font U', sans-serif;
         color: rgb(226, 226, 37);
         -webkit-text-stroke: .5px black; 
         text-shadow: 1px 1px rgb(26, 25, 25);
         font-size: 24px;
-        text-align: center;
     }
 
     .proj{
         width: 120px;
         height: 200px;
+        margin-bottom: 5px;
     }
 
     .label_proj{
@@ -481,5 +493,17 @@ body{
         -webkit-text-stroke: .5px black; 
         text-shadow: 1px 1px rgb(26, 25, 25);
         font-size: 15px;
+    }
+
+    .div_contact_form{
+        /* border: 2px solid rgb(30, 30, 30);
+        box-shadow: 3px 3px 3px 3px rgb(34, 33, 33);
+        border-radius: 5px; */
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .form_size{
+        width: 100%;
     }
 }
