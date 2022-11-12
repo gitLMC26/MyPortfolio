@@ -1,5 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/new-super-mario-font-u');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Domine:wght@600&family=Permanent+Marker&family=Press+Start+2P&family=Pridi&family=Roboto+Slab:wght@300&family=Sedgwick+Ave+Display&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Creepster&family=Domine:wght@600&family=Permanent+Marker&family=Press+Start+2P&family=Pridi&family=Roboto+Slab:wght@300&family=Sedgwick+Ave+Display&family=Trispace:wght@400;500&family=VT323&display=swap');
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -22,7 +22,8 @@ body{
 .home_page{
     margin: 0;
     height: 100vh;
-    background-image: url("/img/superbg.gif");
+    width: 100%;
+    background-image: url("../img/superbg.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -34,6 +35,7 @@ body{
     display: flex;
     justify-content: flex-end;  
     justify-items: flex-end;
+    position: fixed;
     /* padding: 20px 20px 0 0; */
 }
 
@@ -63,7 +65,7 @@ body{
 
 .hero{
     width: 100%;
-    height: 70%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,8 +146,20 @@ body{
     background-position: center;
 }
 
-.div_SE{
-    text-align: center;
+.about_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.post_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .header_SE{
@@ -154,44 +168,64 @@ body{
     font-family: 'New Super Mario Font U', sans-serif;
     -webkit-text-stroke: 2px black; 
     text-shadow: 4px 4px rgb(26, 25, 25);
-    margin: auto;
+}
+
+.about_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    height: auto;
+}
+
+.intro_exp{
+    flex: 1;
 }
 
 .intro_exp p{
-    /* font-family: 'Roboto Slab', serif; */
-    font-family: 'Pridi', serif;
+    font-family: 'Carter One', cursive;
     color: whitesmoke;
     font-size: 25px;
+    font-weight: 700;
     -webkit-text-stroke: .1px black;
     text-shadow: 1px 1px rgb(26, 25, 25);
     text-align: justify;
     text-justify: inter-word;  
     text-indent: 50px; 
-    padding: 0 40px 0 40px;  
+    padding: 10px 10px 10px 10px;  
 }
 
 .tools_exp{
+    flex: 1;
     display: flex;
-    width: auto;
-    padding: 40px 50px 0 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.exp{
+    width: 100%;
+    padding: 10px 30px 10px 30px;
 }
 
 .tools{
-    flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 10px 30px 10px 30px;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tools img{
     transition: transform .2s;
+
 }
 
 .tools img:hover{
-    transform: scale(1.2);
-}
-
-.exp{
-    flex: 1;
+    transform: scale(1.1);
 }
 
 .label{
@@ -229,16 +263,24 @@ body{
 .projects{
     height: 100vh;
     background-color: rgb(102, 150, 253);
+    width: 100%;
+}
+
+.post_center_projects{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .proj_container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .div_hp{
@@ -302,8 +344,8 @@ body{
 }
 
 .proj:hover{
-    transform: scale(1.1);
-    box-shadow: 8px 10px 10px rgb(85, 85, 85);
+    transform: scale(1.03);
+    box-shadow: 0px 4px 4px 4px rgb(85, 85, 85);
     border: 2px solid yellow;
 }
 
@@ -320,8 +362,8 @@ body{
 }
 
 #proj1:hover{
-    transform: scale(1.1);
-    box-shadow: 8px 10px 10px rgb(85, 85, 85);
+    transform: scale(1.03);
+    box-shadow: 0px 4px 4px 4px rgb(85, 85, 85);
     border: 2px solid rgb(226, 226, 37);
     background-image: url("/img/proj1.jpg");
 }
@@ -337,11 +379,9 @@ body{
 }
 
 .div_contact_form{
-    border: 2px solid rgb(30, 30, 30);
-    box-shadow: 3px 3px 3px 3px rgb(34, 33, 33);
-    border-radius: 5px;
     width: 50%;
     margin: auto;
+    height: 100%;
 }
 
 .label_forms{
@@ -411,6 +451,12 @@ body{
         margin: 15px 10px 10px 10px;
     }
 
+    /* ---------------------------About Content--------------------------- */
+    .about_content
+    {
+            flex-direction: column;
+    }
+
     .div_SE{
         padding: 0;
     }
@@ -438,8 +484,11 @@ body{
     }
 
     .tools_exp{
-        flex-direction: column;
-        padding: 0 20px 0 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 0 5px 0 5px;
+        margin: 0;
     }
 
     .tools img{

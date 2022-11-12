@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar_div">
+            <a href="#home_page">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>    
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
     <div class="home_page" id="home_page">
-        <nav class="navbar">
-            <div class="navbar_div">
-                <a href="#home_page">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>    
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
         <div class="hero">
             <div class="intro_par">
                 <div class="intro_par_pic">
@@ -36,89 +37,87 @@
     </div>
 
     <div class="about" id="about">
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <div class="navbar_div">
                 <a href="#home_page">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>    
                 <a href="#contact">Contact</a>
             </div>
-        </nav>
-        <div class="div_SE">
-            <span class="header_SE">Skills and Experience</span>
-        </div>
-        <div class="intro_exp">
-            <p>
-                I am a graduate of BS Computer Science at Bicol University, currently studying Full Stack Web Develobment at KodeGo. I do have a little knowledge in Web Development and still learning. Right now, my main goal is to successfully finish the bootcamp, for me to prepare and land my dream job as a Full Stack Web Developer. 
-            </p>
-        </div>
-        <div class="tools_exp"> 
-            <div class="tools">
-                <span class="label">Tools I use:</span>
-                <div class="icons">
-                    <img src="img/html.png">
-                    <img src="img/css.png">
-                    <img src="img/bootstrap.png">
-                    <img src="img/js.png">
-                    <img src="img/jquery.png">
-                    <img src="img/react.png">
-                    <img src="img/php.png">
-                    <img src="img/laravel.png">
+        </nav> -->
+        <div class="about_container">  
+            <div class="post_center">
+                <span class="header_SE">Skills and Experience</span> 
+                <div class="about_content">
+                    <div class="intro_exp">
+                        <p>
+                            I am a graduate of BS Computer Science at Bicol University, currently studying Full Stack Web Develobment at KodeGo. I do have a little knowledge in Web Development and still learning. Right now, my main goal is to successfully finish the bootcamp, for me to prepare and land my dream job as a Full Stack Web Developer. 
+                        </p>
+                    </div>
+                    <div class="tools_exp"> 
+                        <div class="exp">
+                            <span class="label">Front End</span>
+                            <div class="skill_container"><div class="f_skill_bar"></div></div>
+                            <span class="label">Back End</span>
+                            <div class="skill_container"><div class="b_skill_bar"></div></div>
+                            <span class="label">Server Side</span>
+                            <div class="skill_container"><div class="ss_skill_bar"></div></div>
+                        </div>
+                        <div class="tools">
+                            <span class="label">Proficient on the following:</span>
+                            <div class="icons">
+                                <img src="img/html.png">
+                                <img src="img/css.png">
+                                <img src="img/bootstrap.png">
+                                <img src="img/js.png">
+                                <img src="img/jquery.png">
+                                <img src="img/react.png">
+                                <img src="img/php.png">
+                                <img src="img/laravel.png">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="exp">
-                <span class="label">Front End</span>
-                <div class="skill_container"><div class="f_skill_bar"></div></div>
-                <span class="label">Back End</span>
-                <div class="skill_container"><div class="b_skill_bar"></div></div>
-                <span class="label">Server Side</span>
-                <div class="skill_container"><div class="ss_skill_bar"></div></div>
-                </div>
         </div>
     </div>
 
     <div class="projects" id="projects">
-        <nav class="navbar">
-            <div class="navbar_div">
-                <a href="#home_page">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>    
-                <a href="#contact">Contact</a>
+        <div class="post_center_projects">
+            <div class="div_hp">
+                <span class="header_proj">My Projects</span>
             </div>
-        </nav>
-        <div class="div_hp">
-            <span class="header_proj">My Projects</span>
-        </div>
-        <div class="proj_container">
-            <div id="proj1" class="proj1">
-                <a href="https://gitlmc26.github.io/OnlineLibrary/" class="link_proj1">Online Library</a>
-            </div>
-            <div class="proj" id="proj2">
-                <span class="label_proj">Project 1</span>
-                <span class="soon"> Coming Soon...</span>
-            </div>
-            <div class="proj" id="proj3">
-                <span class="label_proj">Project 2</span>
-                <span class="soon">Coming soon...</span>
-            </div>
-            <div class="proj" id="proj4">
-                <span class="label_proj">Project 3</span>
-                <span class="soon">Coming soon...</span>
+            <div class="proj_container">
+                <div id="proj1" class="proj1">
+                    <a href="https://gitlmc26.github.io/OnlineLibrary/" class="link_proj1">Online Library</a>
+                </div>
+                <div class="proj" id="proj2">
+                    <span class="label_proj">Project 1</span>
+                    <span class="soon">Coming Soon...</span>
+                </div>
+                <div class="proj" id="proj3">
+                    <span class="label_proj">Project 2</span>
+                    <span class="soon">Coming soon...</span>
+                </div>
+                <div class="proj" id="proj4">
+                    <span class="label_proj">Project 3</span>
+                    <span class="soon">Coming soon...</span>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="contact" id="contact">
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <div class="navbar_div">
                 <a href="#home_page">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>    
                 <a href="#contact">Contact</a>
             </div>
-        </nav>
+        </nav> -->
         <div class="div_contact_form d-flex flex-column align-items-center justify-content-center">
-            <div class="form_div d-flex w-100 w-sm-auto align-items-center justify-content-center p-2">
+            <div class="form_div d-flex w-100 h w-sm-auto align-items-center justify-content-center p-2">
                 <form class="form_size w-75 w-sm-50 p-1">
                     <div class="form-group">
                       <label for="exampleInputEmail1" class="label_forms">Your Name</label>
